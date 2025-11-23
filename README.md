@@ -40,6 +40,9 @@ RESEND_API_KEY=re_tu_api_key_aqui
 EMAIL=alvaro.adlf@gmail.com
 ```
 
+> [!IMPORTANT]
+> **Modo de prueba de Resend**: En el plan gratuito sin dominio verificado, solo puedes enviar emails a la dirección de email que usaste para registrarte en Resend. Para enviar a otras direcciones, necesitas [verificar un dominio](https://resend.com/domains).
+
 **Plan gratuito de Resend:**
 - ✅ 100 emails por día gratis
 - ✅ 3,000 emails por mes gratis

@@ -6,6 +6,10 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendEmailAction(name: string, message: string) {
   try {
+    // Debug: verificar variables de entorno
+    console.log('RESEND_API_KEY configurada:', !!process.env.RESEND_API_KEY);
+    console.log('EMAIL configurada:', process.env.EMAIL);
+
     // Validate inputs
     if (!name || !message) {
       return { success: false, error: 'Nombre y mensaje son requeridos' };
@@ -90,7 +94,8 @@ export async function sendEmailAction(name: string, message: string) {
 
     if (error) {
       console.error('Error enviando email:', error);
-      return { success: false, error: 'Error al enviar el email' };
+      console.error('Detalles del error:', JSON.stringify(error, null, 2));
+      return { success: false, error: `Error al enviar el email: ${error.message || JSON.stringify(error)}` };
     }
 
     console.log('Email enviado exitosamente:', data);
