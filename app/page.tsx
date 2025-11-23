@@ -121,7 +121,7 @@ export default function Home() {
                                     type="text"
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
-                                    placeholder="Tu nombre aquí..."
+                                    placeholder="Papá, Mamá ..."
                                     className="w-full bg-transparent border-b-2 border-[#d4af37] text-5xl text-center text-[#2a0a0a] placeholder-[#d4af37]/40 outline-none pb-2 mb-8 focus:border-[#8b0000] transition-colors font-bold"
                                     autoFocus
                                 />
