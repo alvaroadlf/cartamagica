@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-gradient-radial {
+  background-image: radial-gradient(circle at center, var(--tw-gradient-stops));
+}
+
+@keyframes fall {
+  0% { 
+    transform: translateY(-10vh) translateX(0px); 
+  }
+  100% { 
+    transform: translateY(110vh) translateX(20px); 
+  }
+}
